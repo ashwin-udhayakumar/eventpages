@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cgpa-KEC</title>
+    <link type="text/css" rel="stylesheet" href="CSS/cgpa.css">
+    <script type="text/javascript" src="JS/cgpa.js"></script>
+</head>
+<body background="IMG/cgpa_back.png">
+	<h1>CGPA CACULATOR</h1>
+<div id = "boxes">
+            <div id = "leftbox">
+              <table>
+    		   <tr>
+    			<td>
+    				Subject
+    			</td>
+    			<td>
+    				Grade
+    			</td>
+    			<td>
+    				Credits
+    			</td>
+    			<td>
+    			     Points
+    			</td>
+    		   </tr>
+    		   <tr>
+    			<td>Subject 1</td>
+    			<td>
+    				<input type="text" id="sem1" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit1" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_1">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 2</td>
+    			<td>
+    				<input type="text" id="sem2" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit2" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_2">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 3</td>
+    			<td>
+    				<input type="text" id="sem3" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit3" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_3">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 4</td>
+    			<td>
+    				<input type="text" id="sem4" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit4" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_4">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 5</td>
+    			<td>
+    				<input type="text" id="sem5" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit5" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_5">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 6</td>
+    			<td>
+    				<input type="text" id="sem6" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit6" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_6">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 7</td>
+    			<td>
+    				<input type="text" id="sem7" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit7" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_7">0</p>
+    			</td>
+    			</tr>
+    			<tr>
+    			<td>Subject 8</td>
+    			<td>
+    				<input type="text" id="sem8" value="A+">
+    			</td>
+    			<td>
+    				<input type="number" id="credit8" value="3">
+    			</td>
+    			<td>
+                 	<p id="sem_8">0</p>
+    			</td>
+    		    </tr>
+    	      </table>
+            </div> 
+              
+            <div id = "middlebox">
+               <table class="mytable">
+				<tr>
+				<td>Sem</td>
+				<td >GPA</td>
+				</tr>
+				<tr>
+				<td>1</td>
+				<td >
+					<p id="gpa1">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>2</td>
+				<td >
+					<p id="gpa2">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>3</td>
+				<td >
+					<p id="gpa3">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>4</td>
+				<td >
+					<p id="gpa4">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>5</td>
+				<td >
+					<p id="gpa5">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>6</td>
+				<td >
+					<p id="gpa6">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>7</td>
+				<td >
+					<p id="gpa7">0</p>
+				</td>
+				</tr>
+				<tr>
+				<td>8</td>
+				<td >
+					<p id="gpa8">0</p>
+				</td>
+				</tr>
+		       </table>
+            </div>
+            <div id = "rightbox">
+                <p id="cgpa_sem">Cgpa Upto SEM 0</p>
+                <p id="cgpa_final" >00</p>
+            </div>
+
+</div>
+	<button onclick="myFunction()" id="btn">Check Grade Point</button>
+    <h1 id="marks">Enter the marks of sem 1</h1>
+    <h2>Grade Table<h2>
+        <div class="details">
+           <center>
+               <table class="dtl_table" border="1">
+                <tr>
+                <td>Grade</td>
+                <td >Points</td>
+                </tr>
+                <tr>
+                <td>O</td>
+                <td >
+                    <p id="gpa1">10</p>
+                </td>
+                </tr>
+                <tr>
+                <td>A+</td>
+                <td >
+                    <p id="gpa2">9</p>
+                </td>
+                </tr>
+                <tr>
+                <td>A</td>
+                <td >
+                    <p id="gpa3">8</p>
+                </td>
+                </tr>
+                <tr>
+                <td>B+</td>
+                <td >
+                    <p id="gpa4">7</p>
+                </td>
+                </tr>
+                <tr>
+                <td>B</td>
+                <td >
+                    <p id="gpa5">6</p>
+                </td>
+                </tr>
+                <tr>
+                <td>C</td>
+                <td >
+                    <p id="gpa6">5</p>
+                </td>
+                </tr>
+            </table>
+           </center>
+            
+        </div>
+        
+   
+</body>
+</html>
